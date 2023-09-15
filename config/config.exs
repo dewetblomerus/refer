@@ -10,6 +10,8 @@ import Config
 config :refer,
   ecto_repos: [Refer.Repo]
 
+config :ash, :use_all_identities_in_manage_relationship?, false
+
 # Configures the endpoint
 config :refer, ReferWeb.Endpoint,
   url: [host: "localhost"],
