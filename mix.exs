@@ -32,6 +32,7 @@ defmodule Refer.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
+      {:ash, "~> 2.14"},
       {:ecto_sql, "~> 3.10"},
       {:esbuild, "~> 0.7", runtime: Mix.env() == :dev},
       {:finch, "~> 0.13"},
