@@ -1,0 +1,58 @@
+{
+  "attributes": [
+    {
+      "default": "nil",
+      "size": null,
+      "type": "uuid",
+      "source": "id",
+      "references": null,
+      "allow_nil?": false,
+      "generated?": false,
+      "primary_key?": true
+    },
+    {
+      "default": "nil",
+      "size": null,
+      "type": "citext",
+      "source": "email",
+      "references": null,
+      "allow_nil?": false,
+      "generated?": false,
+      "primary_key?": false
+    },
+    {
+      "default": "nil",
+      "size": null,
+      "type": "text",
+      "source": "hashed_password",
+      "references": null,
+      "allow_nil?": false,
+      "generated?": false,
+      "primary_key?": false
+    }
+  ],
+  "table": "users",
+  "hash": "879A8F3D2BBBC25D3E5FB16AFB7AAFD979D6F64F79DB2D77A92A5B9F391E1D21",
+  "repo": "Elixir.Refer.Repo",
+  "identities": [
+    {
+      "name": "unique_email",
+      "keys": [
+        "email"
+      ],
+      "index_name": "users_unique_email_index",
+      "base_filter": null
+    }
+  ],
+  "schema": null,
+  "multitenancy": {
+    "global": null,
+    "attribute": null,
+    "strategy": null
+  },
+  "base_filter": null,
+  "check_constraints": [],
+  "custom_indexes": [],
+  "custom_statements": [],
+  "has_create_action": true
+}

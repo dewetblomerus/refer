@@ -8,7 +8,8 @@
 import Config
 
 config :refer,
-  ecto_repos: [Refer.Repo]
+  ecto_repos: [Refer.Repo],
+  ash_apis: [Refer.Accounts]
 
 config :ash, :use_all_identities_in_manage_relationship?, false
 

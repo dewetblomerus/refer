@@ -16,6 +16,7 @@ defmodule Refer.Application do
       {Phoenix.PubSub, name: Refer.PubSub},
       # Start Finch
       {Finch, name: Refer.Finch},
+      {AshAuthentication.Supervisor, otp_app: :refer},
       # Start the Endpoint (http/https)
       ReferWeb.Endpoint
       # Start a worker by calling: Refer.Worker.start_link(arg)
