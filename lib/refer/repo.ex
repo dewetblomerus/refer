@@ -1,5 +1,5 @@
 defmodule Refer.Repo do
-  use Ecto.Repo,
+  use AshPostgres.Repo,
     otp_app: :refer,
     adapter: Ecto.Adapters.Postgres
 
